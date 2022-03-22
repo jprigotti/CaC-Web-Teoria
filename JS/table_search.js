@@ -2,6 +2,7 @@ function table_search(){
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("input_search");
+  console.log(input);
   filter = input.value.toUpperCase();
   table = document.getElementById("table_1");
   tr = table.getElementsByTagName("tr");
