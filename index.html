@@ -13,6 +13,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Black+Ops+One&family=Days+One&display=swap" rel="stylesheet"> 
 
+	<script src="/JS/table_search.js"></script>
+
+
 </head>
 
 <body>
@@ -36,8 +39,13 @@
 
 
 
+
 <div class="container_table_1">
 	<h1>Enlaces recomendados en la siguiente tabla</h1>
+
+<!-- Lines for Table Search-->
+<input type="text" id="input_search" onkeyup="table_search()" placeholder="Introduce la palabra a buscar..">
+
 	<table id="table_1">
 		<tr>
 			<th>Descripción</th>
