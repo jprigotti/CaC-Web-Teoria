@@ -19,3 +19,13 @@ function table_search(){
     }
   }
 }
+
+
+function copy_clipboard(){
+    /* Get the text field */
+    var copyText = document.getElementById("preformatted_test").textContent;
+     /* Select the text field */
+   console.log(copyText);
+   navigator.clipboard.writeText(copyText);
+   
+ }

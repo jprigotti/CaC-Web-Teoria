@@ -156,3 +156,32 @@ color: #555;
     text-decoration: none;
     color: #000
 }
+
+
+#preformatted_test{
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 1em 2em;
+    align: left;
+    margin: 10px 30px;
+}
+
+.copy_cb{
+    padding: 0;
+    margin:0;
+}
+
+.fa-copy{
+    color: white;
+    float: right;
+    margin-right: 1em;
+}
+
+
+.fa-copy:hover{
+    color: #9e44ae;
+}
+
+.fa-copy:active{
+    color:aqua;
+}
