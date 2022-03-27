@@ -15,11 +15,48 @@
 
 </head>
 <body>
+<header>
+<nav>
+ </nav>
+</header>
 
+<aside class="content_table">
+    <h3>Tabla de contenido</h3>
+    <div class="content_table_list">
+    <ul>
+        <li><a href="#html_tag">Etiqueta HTML</a></li>
+        <li><a href="#html_code">Código inicial HTML</a></li>
+        <li><a href="#titles">Encabezados</a></li>
+        <li><a href="#color_style">Estilos de texto</a></li>
+        <li><a href="#colors">Colores</a></li>
+        <li><a href="#links">Enlaces</a></li>
+        <li><a href="#lists">Listas</a></li>
+        <li><a href="#tables">Tablas</a></li>
+        <li><a href="#forms">Formularios</a></li>
+        <li><a href="#images">Imágenes</a></li>
+        <li><a href="#videos">Videos</a></li>
 
+    </ul>
+</div>
+</aside>
+
+<main>
+<div>
+    <a name="html_tag"></a>
+    <!-- Unsderstanding the HTML Tag anatomy-->
+    <h2>Estructura de una etiqueta HTML</h2>
+    <figure>
+    <img src="./Images/html_tag_anatomy.jpg" alt="HTML Tag Anatomy" style="width:90%" height="100%">
+    <figcaption>Asi es la estructura de una etiqueta HTML</figcaption>
+    </figure>
+</div>
+
+<br>
+
+<a name="html_code"></a>
     <!-- Section preformatted text-->
-    <h1>Código inicial HTML</h1>
-<div >
+    <h2>Código inicial HTML</h2>
+
     <pre id="preformatted_test">
 <span style="color:darkblue">&lt!DOCTYPE html&gt</span>
 &lthtml lang="en"&gt
@@ -34,6 +71,371 @@
 &lt/body&gt
 &lt/html&gt<i class="fa-solid fa-copy" onclick="copy_clipboard()"></i></pre>
     
+<br>
 
+<!-- Encabezados-->
+<h2>Encabezados</h2>
+<a name="titles"></a>
+
+<pre id="preformatted_test">
+&lth1&gtEncabezado en H1&lt/h1&gt
+&lth3&gtEncabezado en H3&lt/h3&gt
+&lth6&gtEncabezado en H2&lt/h6&gt</pre>
+
+<h1>Encabezado en H1</h1>
+<h3>Encabezado en H3</h3>
+<h6>Encabezado en H2</h6>
+
+<br>
+<!-- Section Negrita, Italica, Subrayado, Sub y Super indices -->
+<a name="color_style"></a>
+<h2>Estilos de texto</h2>
+
+<pre id="preformatted_test">
+&ltul&gt
+    &ltli&gtNegrita usando &ltb&gt: &ltb&gtLorem ipsum dolor sit amet.&lt/b&gt&lt/li&gt
+    &ltli&gtNegrita usando &ltstrong&gt: &ltstrong&gtLorem ipsum dolor sit amet.&lt/strong&gt&lt/li&gt
+    &ltli&gtItálica usando &lti&gt: &lti&gtLorem ipsum dolor sit amet.&lt/i&gt&lt/li&gt
+    &ltli&gtItálica usando &ltem&gt : &ltem&gtLorem ipsum dolor sit amet.&lt/em&gt&lt/li&gt
+    &ltli&gtSubrayado usando &ltu&gt : &ltu&gtLorem ipsum dolor sit amet.&lt/u&gt&lt/li&gt
+    &ltli&gtSuperindice usando &ltsup&gt : 4&ltsup&gt2&lt/sup&gt=16&lt/li&gt
+    &ltli&gtSubindice usando &ltsub&gt : H&ltsup&gt2&lt/sup&gtO&lt/li&gt
+&lt/ul&gt</pre>
+
+<ul>
+    <li>Negrita usando &ltb&gt: <b>Lorem ipsum dolor sit amet.</b></li>
+    <li>Negrita usando &ltstrong&gt: <strong>Lorem ipsum dolor sit amet.</strong></li>
+    <li>Itálica usando &lti&gt: <i>Lorem ipsum dolor sit amet.</i></li>
+    <li>Itálica usando &ltem&gt : <em>Lorem ipsum dolor sit amet.</em></li>
+    <li>Subrayado usando &ltu&gt : <u>Lorem ipsum dolor sit amet.</u></li>
+    <li>Superindice usando &ltsup&gt : 4<sup>2</sup>=16</li>
+    <li>Subindice usando &ltsub&gt : H<sup>2</sup>O</li>
+</ul>
+
+
+<br>
+<!-- Working with colors -->
+<a name="colors"></a>
+<h2>Los colores en HTML</h2>
+
+<pre id="preformatted_test">
+&lth2&gtLos colores en HTML&lt/h2&gt
+&ltfont color="#FF0000"&gtUsando  &ltfont color="#FF0000"&gt: Rojo&lt/font&gt
+&ltbr&gt
+&ltfont style="color:#ff0000"&gtUsando  &ltfont style="color:#ff0000"&gt: Red&lt/font&gt</pre>
+
+<font color="#FF0000">Usando  &ltfont color="#FF0000"&gt: Rojo</font>
+<br>
+<font style="color:#ff0000">Usando  &ltfont style="color:#ff0000"&gt: Red</font>
+
+<div class="external_links">
+<h3>Enlaces externos recomendados</h3>
+<a href="https://htmlcolorcodes.com/es/" target="_blank">Obtener códigos de color HTML</a>
+<a href="https://laprestampa.com/el-proceso-grafico/diseno/sintesis-aditiva-y-sustractiva/" target="_blank">Formación de colores</a>
+</div>
+
+<br>
+
+<!-- Working with links -->
+<a name="links"></a>
+<h2>Enlaces</h2>
+<h3>Dentro de la misma página</h3>
+<pre id="preformatted_test">
+&lta href="#footer"&gtFooter&lt/a&gt
+&lta name="footer"&gt&lt/a&gt
+</pre>
+
+<h3>Dentro de la misma web</h3>
+<pre id="preformatted_test">
+&lta href="./folder/file.html"&gt&lt/a&gt
+&lta href="./folder/file.html#footer"&gtFooter&lt/a&gt
+</pre>
+
+<h3>Externos</h3>
+<pre id="preformatted_test">
+&lta href="https://www.google.com"&gtIr a Google&lt/a&gt
+&lta href="https://www.google.com" target="_blank"&gtIr a Google&lt/a&gt
+&lta href="mailto:juan@gmail.com"&gtjuan@gmail.com&lt/a&gt
+</pre>
+
+<h3>A correos electrónicos</h3>
+<pre id="preformatted_test">
+&lta href="mailto:juan@gmail.com"&gtjuan@gmail.com&lt/a&gt
+&lta href="mailto:juan@gmail.com?subject=Primer contacto"&gtjuan@gmail.com&lt/a&gt
+&lta href="mailto:juan@gmail.com?subject=Primer contacto&cc=ventas@gmail.com"&gtjuan@gmail.com&lt/a&gt
+</pre>
+
+
+<h3>Descargas</h3>
+<pre id="preformatted_test">
+&lta href="./folder/file.zip"&gtDescargar archivo&lt/a&gt
+&lta href="./folder/document.pdf"&gtDescargar documento&lt/a&gt
+</pre>
+
+
+<br>
+
+<div>
+    <!-- Working with lists-->
+    <a name="lists"></a>
+    <h2>Listas</h2>
+    <h3>Sin ordenar</h3>
+    <pre id="preformatted_test">
+&ltul&gt
+&ltli&gt10&lt/li&gt
+&ltli&gt20&lt/li&gt
+&lt/ul&gt
+    </pre>
+    <ul>
+    <li>10</li>
+    <li>20</li>
+    </ul>
+<br>
+    <h3>Ordenadas</h3>
+    <pre id="preformatted_test">
+&ltol&gt
+&ltli&gtHTML&lt/li&gt
+&ltli&gtCSS&lt/li&gt
+&lt/ol&gt
+    </pre>
+    <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    </ol>
+
+<h3>Listas de definición</h3>
+<pre id="preformatted_test">
+&ltdl&gt
+    &ltdt&gtFront-end&lt/dt&gt
+    &ltdd&gtHTML&lt/dd&gt
+    &ltdd&gtCSS&lt/dd&gt
+    &ltdt&gtBack-end&lt/dt&gt
+    &ltdd&gtNode&lt/dd&gt
+    &ltdd&gtExpress&lt/dd&gt
+&lt/dl&gt
+</pre>
+
+<dl>
+    <dt>Front-end</dt>
+    <dd>HTML</dd>
+    <dd>CSS</dd>
+    <dt>Back-end</dt>
+    <dd>Node</dd>
+    <dd>Express</dd>
+</dl>
+</div>
+
+
+
+    <!-- Working with Tables-->
+    <a name="tables"></a>
+
+    <pre id="preformatted_test">
+&lttable class="table_2"&gt
+    &lttr&gt
+        &ltth&gtName&lt/th&gt
+        &ltth&gtPhone#&lt/th&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtJuan&lt/td&gt
+        &lttd&gt5644-8742&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+        &lttd&gtMary&lt/td&gt
+        &lttd&gt4566-8412&lt/td&gt
+    &lt/tr&gt
+&lt/table&gt
+        </pre>
+
+<div>
+    <h2>Tablas</h2>
+    <table class="table_2">
+        <tr>
+            <th>Name</th>
+            <th>Phone#</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>5644-8742</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>4566-8412</td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+    <!-- Working with Forms-->
+    <a name="forms"></a>
+    <div>
+    <h2>Formularios</h2>
+    <p>Esta es la estructura básica para iniciar un formulario.</p>
+
+    <pre id="preformatted_test">
+&ltform action=""&gt
+    &ltlabel for="name"&gt
+    &ltspan&gt¿Cuál es tu numbre?&lt/span&gt
+    &ltinput type="text" id="name"&gt
+    &lt/label&gt
+&lt/form&gt
+        </pre>
+        
+        <p>Comenzamos con la etiqueta <span style="background:black; padding:0.2rem; color:aqua">&ltform&gt</span>.</p>
+        <p>En action="" pondremos más adelante el servidor que va a procesar o recibir los datos de nuestro formulario.</p>
+        <p>Vamos a completar el código y luego veremos como luce nuestro formulario.</p>
+
+<br>
+
+<pre id="preformatted_test">
+&ltform action="" class="form_1"&gt
+    &ltlabel for="name"&gt
+        &ltspan&gt¿Cuál es tu numbre?&lt/span&gt
+        &ltinput type="text" id="name" name="name" placeholder="Tu numbre" autocomplete="name" required&gt
+    &lt/label&gt
+
+    &ltlabel for="age"&gt
+        &ltspan&gt¿Cuál es tu edad?&lt/span&gt
+        &ltinput type="number" id="age"  name="age" min="18" max="99" value="21" &gt
+    &lt/label&gt
+
+    &ltlabel for="birth"&gt
+        &ltspan&gt¿Cuál es tu fecha de nacimiento?&lt/span&gt
+        &ltinput type="date" id="birth" name="birth"&gt
+        &lt/label&gt
+    
+    &ltlabel&gtInteresado en:
+    &ltinput list="courses" name="courses"&gt&lt/label&gt
+    &ltdatalist id="courses"&gt
+        &ltoption value="HTML"&gt
+        &ltoption value="CSS"&gt
+        &ltoption value="JS"&gt
+    &lt/datalist&gt  
+
+    &lt!-- Notemos que podemos usar alternativamente Select, aunque no nos da la opcion de buscar como sucede con datalist --&gt
+
+    &ltlabel&gtInteresado en: &lt/label&gt
+    &ltselect name="select" id="select"&gt
+        &ltoption value="HTML"&gtHTML&lt/option&gt
+        &ltoption value="CSS"&gtCSS&lt/option&gt
+        &ltoption value="JS"&gtJS&lt/option&gt
+    &lt/select&gt
+
+
+    &ltinput type="submit"&gt
+    &ltinput type="reset"&gt
+&lt/form&gt
+            </pre>
+
+<br>
+
+        <form action="" class="form_1">
+            <label for="name">
+                <span>¿Cuál es tu numbre?</span>
+                <input type="text" id="name" name="name" placeholder="Tu numbre" autocomplete="name" required>
+            </label>
+
+            <label for="age">
+                <span>¿Cuál es tu edad?</span>
+                <input type="number" id="age"  name="age" min="18" max="99" value="21" >
+            </label>
+
+            <label for="birth">
+                <span>¿Cuál es tu fecha de nacimiento?</span>
+                <input type="date" id="birth" name="birth">
+            </label>
+
+            <label>Interesado en:
+            <input list="courses" name="courses"></label>
+            <datalist id="courses">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JS">
+            </datalist>  
+
+            <label>Interesado en: </label>
+            <select name="select" id="select">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+            </select>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+        <h3>Input type vs submit button</h3>
+        <p>Se recomienda usar "input type submit" para formularios y "button" cualquier otra función de la página ya que es más flexible.</p>
+
+        <pre id="preformatted_test">
+&ltinput type="submit" value="input submit"&gt
+&ltbutton type="submit"&gtbutton submit&lt/button&gt</pre>
+        <input type="submit" value="input submit">
+        <button type="submit">button submit</button>
+
+    </div>
+
+<br>
+
+<div class="images">
+    <a name="images"></a>
+    <!-- Understanding and inserting videos-->
+    <h2>Trabajando con imágenes</h2>
+    <p>Existen dos tipos de imágenes</p>
+    <ul>
+        <li>Lossy - con pérdidad de calidad</li>
+        <p>JPG/JPEG</p>
+        <li>Losless - sin pérdidad de calidad</li>
+        <p>PNG8, PNG24, SVG - Scalable Vector Graphics</p>
+    </ul>
+    
+    <h3>Sitios de descargas</h3>
+    <div>
+    <a href="https://www.pexels.com/es-es/" target="_blank">Pexels - Descarga imágenes gratuitas</a>
+    <a href="https://tinypng.com/"target="_blank"> Comprimí las imágenes con Tinypng</a>
+    </div>  
+
+    <pre id="preformatted_test">
+&ltfigure&gt
+&ltimg src="./Images/html_tag_anatomy.jpg" alt="HTML Tag Anatomy" style="width:90%" height="100%"&gt
+&ltfigcaption&gtAsi es la estructura de una etiqueta HTML&lt/figcaption&gt
+&lt/figure&gt</pre>
+
+</div>
+
+<br>
+
+<a name="videos"></a>
+<!-- Inserting videos-->
+<div>
+    <h2>Videos</h2>
+    <pre id="preformatted_test">
+
+&lt!-- Insertar video con Preload--&gt;
+&ltvideo src="./Images/video.mp4" controls preload="auto"&gt&lt/video&gt
+
+&lt!-- Insertar video con Preload y dos versiones por browser compatibility--&gt;
+&ltvideo controls preload="auto"&gt
+    &ltsource src="./Images/video.mp4" /&gt
+    &ltsource src="./Images/video.m4v" /&gt
+&lt/video&gt
+
+&lt!-- Insertar video con Preload, start time 00:10 - end time 00:60--&gt;
+&ltvideo src="./Images/video.mp4#t10,60"&gt&lt/video&gt</pre>
+</div>
+
+<div style="margin-top:800px"></div>
+<footer class="footer">Designed by JPR</footer>
+
+
+
+
+
+</main>
 </body>
 </html>
+
+
+
+
