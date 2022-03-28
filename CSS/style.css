@@ -9,6 +9,125 @@ html{
 }
 
 
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/front_main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo{
+    width: 200px;
+    margin: 4rem;
+    cursor: pointer;
+}
+
+nav ul{
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 1rem;
+    margin-left: 1.5rem;
+    color: #ddd;
+    border: 0.1rem solid #ddd;
+    border-radius: 5px;
+}
+
+/* nav ul :hover{
+background-color: #958a9770;
+} */
+
+nav ul li a{
+    color: #f4f4f4;
+    text-decoration: none; 
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color:aqua;
+    text-decoration: none; 
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+}
+
+/* #main-header{
+    background-color: cadetblue;
+    color: #fff;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    padding: 5px;
+    margin: 1%;
+} */
+
+/* #navbar{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+#navbar ul{
+    background-color: #333;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#navbar ul li{
+    display: inline-flex;
+    list-style: none;
+    margin: 1rem;
+}
+
+#navbar a{
+    color: #f4f4f4;
+    text-decoration: none; 
+    font-family: 'Aldrich', sans-serif;
+    font-size: 16px;
+} */
+
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav.sticky ul{
+    width: auto;
+    margin: 0;
+}
+
+nav.sticky ul li{
+    width: auto;
+    margin: 0;
+    border: none;
+}
+
+nav.sticky img{
+    width: 50px;
+    margin: 0.5rem 5rem;
+}
+
 body{
     background-color: white;
     color: #555;
@@ -82,11 +201,11 @@ main h2{
     color: #9e44ae;
 }
 
-ul{
+/* ul{
     margin: 1em;
     padding: 0 2em;
     list-style:square;
-}
+} */
 
 dl{
 margin: 1 em;
@@ -119,42 +238,6 @@ td, th{
     clear: both; 
 }
 
-#main-header{
-    background-color: cadetblue;
-    color: #fff;
-    font-family: 'Black Ops One', cursive;
-    text-align: center;
-    padding: 5px;
-    margin: 1%;
-}
-
-#navbar{
-    background-color: #333;
-    color: #fff;
-    text-align: left;
-}
-
-#navbar ul{
-    padding: 0%;
-    list-style-type: none; 
-    text-align: center;
-}
-
-#navbar li{
-    display: inline;
-}
-
-#navbar a{
-    color: #f4f4f4;
-    text-decoration: none; 
-    font-family: 'Aldrich', sans-serif;
-    font-size: 16px;
-    padding-left: 20px;
-}
-
-#navbar a:hover{
-    color:yellow;
-}
 
 
 .container_table_1{

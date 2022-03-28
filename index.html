@@ -18,28 +18,32 @@
 
 	<!-- Local CSS Style -->
 	<script src="script.js"></script>
-
-
 </head>
 
 <body>
-<header id="main-header">
-	<div class="container">
-	<h1>CaC - My sitio Web</h1>
+
+	<div class="header">
+		<nav id="navbar">
+			<img src="./Images/Logo_CaC_blank_300px.png" class="logo" alt="Logo CaC">
+			<!-- Nav - Navegation Menu -->
+			<ul id="menu">
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="HTML_Tags.html" target="_blank">HTML</a></li>
+				<li><a href="CSS Style.html" target="_blank">CSS</a></li>
+				<li><a href="JS" target="_blank">JS</a></li>
+				<li><a href="github.html" target="_blank">Github</a></li>
+			</ul>
+
+		</nav>
 	</div>
-</header>
 
-<!-- Nav - Navegation Menu -->
-<nav id="navbar">
-	<ul>
-		<li><a href="index.html" target="_blank">Home</a></li>
-		<li><a href="HTML_Tags.html" target="_blank">HTML</a></li>
-		<li><a href="CSS Style.html" target="_blank">CSS</a></li>
-		<li><a href="JS" target="_blank">JS</a></li>
-		<li><a href="github.html" target="_blank">Github</a></li>
 
-	</ul>
-</nav>
+
+
+
+
+
+
 
 
 
@@ -153,6 +157,21 @@
 	<p>Copyright &copy; 2022 CaC - JPR</p>
 	</footer>
 
+
+
+	<script>
+		var navbar = document.getElementById("navbar");
+		var menu = document.getElementById("menu");
+
+		window.onscroll = function(){
+			if (window.pageYOffset >= menu.offsetTop){
+				navbar.classList.add("sticky");
+			}
+			else{
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
 </body>
 </html>
 
