@@ -63,6 +63,20 @@ nav ul li a:hover{
     font-size: 16px;
 }
 
+.box_chrevron_down{
+    margin: 1rem 0
+}
+
+.box_chrevron_down i{
+    display: block;
+    margin:0;
+    padding:0;
+}
+
+.fa-chevron-down{
+    color: rgb(124, 122, 122);
+}
+
 /* #main-header{
     background-color: cadetblue;
     color: #fff;
