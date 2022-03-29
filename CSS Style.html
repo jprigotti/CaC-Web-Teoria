@@ -9,12 +9,107 @@
 	<script src="https://kit.fontawesome.com/badcd6f1fd.js" crossorigin="anonymous"></script>
 
 	<!-- Local CSS Style -->
-	<script src="script.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 
+	<script src="script.js"></script>
 
     <title>HTML Tags</title>
 </head>
 <body>
+
+
+    <aside class="content_table">
+        <h3>Tabla de contenido</h3>
+        <div class="content_table_list">
+        <ul>
+            <li><a href="#declaring_css">Declarando CSS</a></li>
+            <li><a href="#html_code">Código inicial HTML</a></li>
+            <li><a href="#titles">Encabezados</a></li>
+            <li><a href="#color_style">Estilos de texto</a></li>
+            <li><a href="#colors">Colores</a></li>
+            <li><a href="#links">Enlaces</a></li>
+            <li><a href="#lists">Listas</a></li>
+            <li><a href="#tables">Tablas</a></li>
+            <li><a href="#forms">Formularios</a></li>
+            <li><a href="#images">Imágenes</a></li>
+            <li><a href="#videos">Videos</a></li>
     
+        </ul>
+    </div>
+    </aside>
+
+    <main>
+        
+        <!-- Using CSS-->
+        <div class="declaring_css" id="declaring_css">
+            <h2 style="color:green">Declaración de estilos en CSS</h2>
+
+            <h3>En la etiqueta HTML</h3>
+
+            <pre id="preformatted_test">
+&ltbody&gt
+    &ltmain&gt
+        &lth2 style="color:green"&gtHay 3 formas de usar CSS&lt/h2&gt
+    &lt/body&gt
+&lt/main&gt</pre>
+
+            <h3>En el cuerpo del archivo HTML</h3>
+
+            <pre id="preformatted_test">
+&lthead&gt
+    &ltstyle&gt
+        h2{
+        color: blue;
+        }
+    &lt/style&gt
+&lt/head&gt</pre>
+
+            <h3>Llamando un archivo (local/externo)</h3>
+
+            <pre id="preformatted_test">
+&lthead&gt
+    &lt!-- Inserting Icons from Fontawesome --&gt
+    &ltscript src="https://kit.fontawesome.com/badcd6f1fd.js" crossorigin="anonymous"&gt&lt/script&gt
+                
+    &lt!-- Local CSS Style --&gt
+    <span style="color:blueviolet">&ltlink rel="stylesheet" href="./CSS/style.css"&gt</span>
+&lt/head&gt</pre>
+
+<br>
+
+<p>El estilo se puede aplicar a:</p>
+<ul>
+    <li>Un elemento (en el CSS usamos simplemente el elemento)</li>
+    <li>Una Class (en el CSS usamos .Class)/li>
+    <li>Un ID (en el CSS usamos #ID)</li>
+</ul>
+
+<pre id="preformatted_test">
+// Aplicamos estilo al elemento//
+p{
+    color:#9e44ae;
+}
+
+// Aplicamos estilo a la clase//
+.class_1{
+    color:#a877b1;
+}
+
+// Aplicamos estilo al ID//
+#id_1{
+    color: aqua;
+}</pre>
+
+        </div>
+
+
+    </main>
+
+    <div style="margin-top:800px;"></div>
+    
+<footer>
+Designed by JPR
+</footer>
+
 </body>
 </html>

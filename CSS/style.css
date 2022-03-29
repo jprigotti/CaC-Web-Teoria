@@ -6,6 +6,7 @@
 
 html{
     /* font-size: 62.5%; */
+    scroll-behavior: smooth;
 }
 
 
@@ -15,7 +16,7 @@ html{
     background-image: url(../Images/front_main.jpg);
     background-position: center;
     background-size: cover;
-}
+    }
 
 nav{
     width: 100%;
@@ -421,3 +422,13 @@ color: #555;
     display: block;
     margin-bottom: 1rem;
 }
+
+
+.container_urls a{
+    text-decoration: none;
+    display: block;
+
+}
+
+
+/* Esta parte corresponde al CSS Style.htm page */
