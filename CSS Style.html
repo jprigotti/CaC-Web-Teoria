@@ -15,17 +15,41 @@
 
     <title>HTML Tags</title>
 </head>
+
 <body>
+
+<header>
+    <nav class="cssNav_1">
+        <ul class="cssNav_1_Ul">
+<li class="cssNav_1_Ul__item"><a href="#">option1</a></li>
+<li class="cssNav_1_Ul__item"><a href="#">option2</a></li>
+<li class="cssNav_1_Ul__item"><a href="#">option3</a></li>
+<li class="cssNav_1_Ul__item"><a href="#">option4</a></li>
+</ul>
+    </nav>
+
+    <nav class="cssNav_2">
+        <div class="cssNav_2_container">
+<a class="cssNav_2__item" href="#">OPTION5</a>
+<a class="cssNav_2__item" href="#">OPTION6</a>
+<a class="cssNav_2__item" href="#">OPTION7</a>
+<a class="cssNav_2__item" href="#">OPTION8</a>
+        </div>
+    </nav>
+</header>
+
 
 
     <aside class="content_table">
         <h3>Tabla de contenido</h3>
         <div class="content_table_list">
         <ul>
+            <li><a href="#css_anatomy">Anatomía de una regla CSS</a></li>
+            <li><a href="#box_model">Modelo de caja</a></li>
             <li><a href="#declaring_css">Declarando CSS</a></li>
-            <li><a href="#html_code">Código inicial HTML</a></li>
-            <li><a href="#titles">Encabezados</a></li>
-            <li><a href="#color_style">Estilos de texto</a></li>
+            <li><a href="#pseudo">Pseudo classes & elements</a></li>
+            
+
             <li><a href="#colors">Colores</a></li>
             <li><a href="#links">Enlaces</a></li>
             <li><a href="#lists">Listas</a></li>
@@ -39,7 +63,17 @@
     </aside>
 
     <main>
-        
+        <!-- CSS Anatomy-->
+        <div id="css_anatomy">
+            <h2>Anatomía de una regla CSS</h2>
+            <figure>
+                <img src="./Images/css_anatomy.png" alt="CSS Anatomy" style="width:50%">
+                <figcaption>Asi es la estructura de una regla CSS</figcaption>
+            </figure>
+
+        </div>
+
+
         <!-- Using CSS-->
         <div class="declaring_css" id="declaring_css">
             <h2 style="color:green">Declaración de estilos en CSS</h2>
@@ -101,6 +135,31 @@ p{
 }</pre>
 
         </div>
+
+    <!-- Pseudo classes y Pseudo elements-->
+    <div id="pseudo">
+    <h2>Peudo classes & pseudo elements</h2>
+
+    <p>En los siguientes ejemplos de código, podemos ver el uso de uno y otro.</p>
+
+    <p>Pseudo classes definen estilo de un estado, por ejemplo el hover de un link</p>
+    <pre id="preformatted_test">
+// Aplicamos estilo al estado hover de un link
+.cssNav_2__item:hover{
+background: #1D2F3D;
+color: #fff;
+text-decoration: none;
+    }</pre>
+
+    <p>mientras que los Pseudo elements definen una parte específica, ::before ::after </p>
+
+    <pre id="preformatted_test">
+/*Pseudo element*/
+.cssNav_1_Ul__item a::before{
+    content: " complement text ";
+}</pre>
+
+</div>
 
 
     </main>

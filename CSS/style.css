@@ -180,6 +180,8 @@ main h2{
 
 .content_table_list{
     border-left: 1px solid #333;
+    background-color: #555;
+    max-width: 250px;
 }
 
 .content_table_list ul{
@@ -199,6 +201,7 @@ main h2{
     }
 
 .content_table_list li:hover{
+    width: 100%;
     background-color: #a877b1;
 }
 
@@ -431,4 +434,114 @@ color: #555;
 }
 
 
+/*----------------------------------------------*/
 /* Esta parte corresponde al CSS Style.htm page */
+/*----------------------------------------------*/
+
+/* Navigation Bar #1 */
+.cssNav_1{
+    margin-top: 1rem;
+    padding: 0rem;
+    background-color: #555;
+}
+
+
+.cssNav_1_Ul{
+    background-color: #555;
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cssNav_1_Ul__item{
+    display: inline-block;
+    /* background-color: #555; */
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border-color: #ddd;
+    border-radius: 10px;
+}
+
+.cssNav_1_Ul__item:hover{
+    background-color: #333;
+
+}
+
+.cssNav_1_Ul__item a{
+    text-decoration: none;
+    /* background-color: red; */
+    /* border: 10px solid violet; */
+}
+
+/*Pseudo element*/
+.cssNav_1_Ul__item a::before{
+    content: " < ";
+}
+
+.cssNav_1_Ul__item a::after{
+    content: " > ";
+}
+
+/*********************/
+/* Navigation Bar #1 */
+.cssNav_2{
+    padding: 0;
+    margin:0;
+    background: #FFCD48;
+	/* position: sticky;
+	top: 0; */
+}
+
+.cssNav_2_container{
+    max-width: 1000px;
+	width: 90%;
+	margin:auto;
+	display: flex;
+	justify-content: space-between;
+ }
+
+.cssNav_2 a{
+    text-decoration: none;
+    /* display: inline-block; */
+    padding:20px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    transition: .3s ease-out all;
+}
+
+.cssNav_2__item:hover{
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#css_anatomy figure{
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 3px;
+    max-width: 50vw;
+    margin: auto;
+}
+
+#css_anatomy img{
+/* display: block; */
+margin: 0 auto;
+padding: 1rem 0;
+width: 100%;
+
+}
+
+#css_anatomy figcaption{
+text-align: center; 
+background-color: #000;
+color: lightseagreen;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.8rem;
+
+}
